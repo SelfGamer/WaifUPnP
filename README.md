@@ -13,25 +13,16 @@ using literally 1 line of code, as it should be!
 It's as easy as:
 
 ```java
-UPnP.openTCP(<port number here>);
+UPnP.openTCP(<port number here>, <usage name here>);
 ```
-
-Usage Examples are included.
 
 ## Usage
 
-To compile, import the project in Netbeans.
-Alternatively, download the binaries from http://fdossena.com/?p=waifupnp/index.frag
-
-Once you have the .jar files:
-
 - Import `WaifUPnP.jar` into your application
-- Optionally, import `WaifUPnP-javadoc.jar` if you need JavaDoc
-- `WaifUPnP-sources.jar` contains the source code and should not be imported into your project
 
 ## Compatibility
 
-Java 6 and newer
+Java 11 and newer
 
 ## Limitations
 
@@ -54,3 +45,8 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/lgpl>.
+
+Modifications to the original:
+Added module-info.java
+Added specification of usage naming
+Added debug info
