@@ -67,22 +67,24 @@ public class UPnP {
      * Opens a TCP port on the gateway
      * 
      * @param port TCP port (0-65535)
+     * @param name Name for the opening
      * @return true if the operation was successful, false otherwise
      */
-    public static boolean openPortTCP(int port) {
+    public static boolean openPortTCP(int port, String name) {
         if(!isUPnPAvailable()) return false;
-        return defaultGW.openPort(port, false);
+        return defaultGW.openPort(port, false, name);
     }
     
     /**
      * Opens a UDP port on the gateway
      * 
      * @param port UDP port (0-65535)
+     * @param name Name for the opening
      * @return true if the operation was successful, false otherwise
      */
-    public static boolean openPortUDP(int port) {
+    public static boolean openPortUDP(int port, String name) {
         if(!isUPnPAvailable()) return false;
-        return defaultGW.openPort(port, true);
+        return defaultGW.openPort(port, true, name);
     }
     
     /**
